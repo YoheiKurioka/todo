@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  react:
+    build: .
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./todo:/usr/src/todo
+    ports:
+      - '3000:3000'
+    tty: true
+    
