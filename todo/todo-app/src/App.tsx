@@ -3,6 +3,8 @@ import './App.css';
 import { Task } from './components/Types'
 import TaskInput from './components/TaskInput'
 import TaskList from './components/TaskList'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 // Task型のリスト中身はJson形式．
