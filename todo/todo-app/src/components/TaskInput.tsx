@@ -11,7 +11,7 @@ const TaskInput: React.FC<Props> = ({ setTasks,tasks }) => {
     const [count, setCount] = useState<number>(tasks.length + 1);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setInputTitle(e.target.value)
+        setInputTitle(e.target.value);
     };
 
     const handleSubmit = () => {
