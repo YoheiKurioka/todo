@@ -9,12 +9,12 @@ import TaskList from './components/TaskList'
 const initialState: Task[] = [
   {
     id: 2,
-    title: 'Hello World',
+    title: 'default2',
     done: false
   },
   {
     id: 1,
-    title: 'Start React Todo App by TS',
+    title: 'default1',
     done: false
   }
 ];
