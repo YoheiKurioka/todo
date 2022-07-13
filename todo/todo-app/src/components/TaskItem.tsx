@@ -1,6 +1,5 @@
 import React from 'react';
-import { Task } from './Types';
-import { Button } from "react-bootstrap"; 
+import { Task } from './Types'; 
 
 // 型エイリアス．
 type Props = {
@@ -16,9 +15,9 @@ const TaskItem: React.FC<Props> = ({ task, handleDone, handleDelete }) => {
                 <input className="checkbox-input" type="checkbox" onClick={() => handleDone(task)} defaultChecked={task.done} />
                 <span className="checkbox-label">{ task.title }</span>
             </label>
-            <Button className="delete-btn" onClick={ () => handleDelete(task)}>
+            <button className="delete-btn" onClick={ () => handleDelete(task)}>
                 削除
-            </Button>
+            </button>
         </li>
 
     )
