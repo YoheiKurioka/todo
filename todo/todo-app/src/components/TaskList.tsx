@@ -27,12 +27,12 @@ const TaskList: React.FC<Props> = ({ tasks, setTasks }) =>  {
     };
 
     return (
-        <div className="tasklist-container">
+        <div className="tasklist-container position-absolute top-50 start-50 translate-middle">
             {
                 tasks.length <= 0 ? 
                 'タスクの登録がありません'
                 :
-                <ul>
+                <ul className="list-group list-group-flush">
                     {
                         tasks.map(task => (
                             <TaskItem 

@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Route, BrowserRouter } from "react-router-dom";
-import Login from './login/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import { Route, BrowserRouter } from "react-router-dom";
+// import Login from './login/Login';
 
 
 const root = ReactDOM.createRoot(
@@ -12,10 +13,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <App />
+    {/* <BrowserRouter>
         <Route path="/" element={<App />} />
         <Route path="/login" element={<Login />} />
-    </BrowserRouter>
+    </BrowserRouter> */}
   </React.StrictMode>
 );
 

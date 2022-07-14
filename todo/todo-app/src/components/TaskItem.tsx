@@ -10,15 +10,15 @@ type Props = {
 
 const TaskItem: React.FC<Props> = ({ task, handleDone, handleDelete }) => {
     return (
-        <li className={ task.done ? 'done':'incomplete' }>
-            <label>
-                <input className="checkbox-input" type="checkbox" onClick={() => handleDone(task)} defaultChecked={task.done} />
-                <span className="checkbox-label">{ task.title }</span>
-            </label>
-            <button className="delete-btn" onClick={ () => handleDelete(task)}>
-                削除
-            </button>
-        </li>
+            <li className={task.done ? "done list-group-item":"incomplete list-group-item"}>
+                <label>
+                    <input className="checkbox-input form-check-input me-1" type="checkbox" onClick={() => handleDone(task)} defaultChecked={task.done} />
+                    <span className="checkbox-label">{ task.title }</span>
+                </label>
+                <button className="delete-btn btn btn-danger btn-sm" onClick={ () => handleDelete(task)}>
+                    削除
+                </button>
+            </li>
 
     )
 };
